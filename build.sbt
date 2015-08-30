@@ -1,4 +1,4 @@
-name := "play-scala"
+name := "wakurun-web"
 
 version := "1.0-SNAPSHOT"
 
