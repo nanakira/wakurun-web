@@ -1,7 +1,19 @@
-@(message: String)
+@(stickies: List[Sticky])
 
-@main("Welcome to Play") {
+@main("Wakurun KPT App") {
+  <h2>Input your KPT here:</h2>
 
-    @play20.welcome(message)
+  <form action="/insert" method="POST">
+    <input name="name" type="text" placeholder="your name"/>
+    <input name="content" type="text" placeholder="your KPT comment"/>
+    <input type="submit"/>
+  </form>
 
+  <h2>Current KPT board:</h2>
+  <table>
+    <tr><th>Name</th><th>Content</th></tr>
+    @for(s <- stickies){ 
+    <tr><td>@s.name</td><td>@s.content</td></tr>
+    }
+  </table>
 }
