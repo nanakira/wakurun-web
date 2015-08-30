@@ -1,8 +1,8 @@
 # --- !Ups
 
-create table "CAT" ("NAME" VARCHAR NOT NULL PRIMARY KEY,"COLOR" VARCHAR NOT NULL);
+create table "STICKY" ("NAME" VARCHAR NOT NULL PRIMARY KEY,"CONTENT" VARCHAR NOT NULL);
 
 # --- !Downs
 
-drop table "CAT";
+drop table "STICKY";
 
